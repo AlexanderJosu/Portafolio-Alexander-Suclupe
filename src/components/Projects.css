@@ -1,0 +1,213 @@
+.projects {
+  background-color: #ffffff;
+}
+
+[data-theme="dark"] .projects {
+  background-color: #1a0f2e;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.project-card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.25);
+  border-color: var(--accent);
+}
+
+[data-theme="dark"] .project-card:hover {
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+  background-color: #321f47;
+}
+
+.project-card.featured {
+  border: 2px solid var(--accent);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(220, 38, 38, 0.06) 100%);
+}
+
+[data-theme="dark"] .project-card.featured {
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(236, 72, 153, 0.1) 100%);
+  border-color: var(--accent);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project-header h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.project-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.project-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.highlight-item .bullet {
+  color: var(--accent);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  background-color: var(--bg-secondary);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background-color: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220, 38, 38, 0.35);
+}
+
+[data-theme="dark"] .tech-tag:hover {
+  box-shadow: 0 5px 15px rgba(236, 72, 153, 0.35);
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.projects-cta {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.projects-cta p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Color variants for each project */
+.project-card:nth-child(1) .project-header h3 {
+  background: linear-gradient(135deg, #DC2626 0%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-card:nth-child(2) .project-header h3 {
+  background: linear-gradient(135deg, #F97316 0%, #FBBF24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-card:nth-child(3) .project-header h3 {
+  background: linear-gradient(135deg, #EF4444 0%, #FB7185 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 2rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+  }
+
+  .project-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn-primary,
+  .project-actions .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
