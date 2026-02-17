@@ -21,8 +21,8 @@
 }
 
 [data-theme="dark"] .scroll-progress-bar {
-  background: linear-gradient(90deg, #EF4444 0%, #FB923C 50%, #FBBF24 100%);
-  box-shadow: 0 0 10px rgba(239, 68, 68, 0.7);
+  background: linear-gradient(90deg, #DC2626 0%, #F97316 50%, #FB923C 100%);
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
 }
 
 .nav-container {
@@ -139,7 +139,7 @@
 }
 
 [data-theme="dark"] .nav-menu li a::after {
-  background: linear-gradient(90deg, #EF4444 0%, #FB923C 100%);
+  background: linear-gradient(90deg, #DC2626 0%, #F97316 100%);
 }
 
 .nav-menu li a:hover {
@@ -220,7 +220,7 @@
 
 [data-theme="dark"] .btn-resume {
   background-color: white;
-  color: var(--text-primary);
+  color: #1a0f2e;
 }
 
 .nav-toggle {
@@ -292,7 +292,7 @@
 }
 
 [data-theme="dark"] .nav-mobile-menu li a::before {
-  background: linear-gradient(90deg, #EF4444 0%, #FB923C 100%);
+  background: linear-gradient(90deg, #DC2626 0%, #F97316 100%);
 }
 
 .nav-mobile-menu li a:hover {

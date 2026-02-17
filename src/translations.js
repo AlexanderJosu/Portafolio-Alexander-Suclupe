@@ -50,6 +50,8 @@ export const translations = {
       title: 'Proyectos Destacados',
       viewDemo: 'Ver Demo',
       viewCode: 'Ver Código',
+      viewMore: 'Ver Más Proyectos',
+      viewLess: 'Ver Menos',
       project1: {
         title: 'NutriScan',
         description: 'Aplicación web de recomendación nutricional usando machine learning. Desplegada en Azure con arquitectura escalable y API RESTful.',
@@ -64,6 +66,11 @@ export const translations = {
         title: 'América tvGO Landing',
         description: 'Landing page moderna y responsiva para plataforma de streaming con animaciones smooth y diseño atractivo.',
         tags: ['React', 'CSS3', 'Responsive']
+      },
+      project4: {
+        title: 'Sistema de Gestión de Productos',
+        description: 'Sistema completo de CRUD de productos utilizando NestJS, Vue 3 (Nuxt SSR), PostgreSQL y Docker con arquitectura escalable.',
+        tags: ['NestJS', 'Vue 3', 'Nuxt', 'PostgreSQL', 'Docker']
       }
     },
     // Contact
@@ -138,6 +145,8 @@ export const translations = {
       title: 'Featured Projects',
       viewDemo: 'View Demo',
       viewCode: 'View Code',
+      viewMore: 'Show More Projects',
+      viewLess: 'Show Less',
       project1: {
         title: 'NutriScan',
         description: 'Nutritional recommendation web app using machine learning. Deployed on Azure with scalable architecture and RESTful API.',
@@ -152,6 +161,11 @@ export const translations = {
         title: 'América tvGO Landing',
         description: 'Modern and responsive landing page for streaming platform with smooth animations and attractive design.',
         tags: ['React', 'CSS3', 'Responsive']
+      },
+      project4: {
+        title: 'Product Management System',
+        description: 'Complete CRUD product system using NestJS, Vue 3 (Nuxt SSR), PostgreSQL and Docker with scalable architecture.',
+        tags: ['NestJS', 'Vue 3', 'Nuxt', 'PostgreSQL', 'Docker']
       }
     },
     // Contact

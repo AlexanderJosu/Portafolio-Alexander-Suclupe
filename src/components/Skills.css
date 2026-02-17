@@ -1,9 +1,9 @@
 .skills {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 [data-theme="dark"] .skills {
-  background-color: #221833;
+  background-color: transparent;
 }
 
 .skills-container {
@@ -33,7 +33,7 @@
 }
 
 [data-theme="dark"] .skill-category:hover {
-  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.25);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.2);
   background-color: #321f47;
 }
 
@@ -105,7 +105,7 @@
 
 /* Color variants for each category */
 .skill-category:nth-child(1) .category-header h3 {
-  background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+  background: linear-gradient(135deg, #DC2626 0%, #F97316 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -119,7 +119,7 @@
 }
 
 .skill-category:nth-child(3) .category-header h3 {
-  background: linear-gradient(135deg, #EF4444 0%, #FB7185 100%);
+  background: linear-gradient(135deg, #DC2626 0%, #F97316 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

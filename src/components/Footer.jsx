@@ -7,7 +7,7 @@ function Footer({ t }) {
   const socialLinks = [
     {
       icon: <FaGithub />, 
-      href: 'https://github.com/Alexjosu',
+      href: 'https://github.com/AlexanderJosu',
       label: 'GitHub'
     },
     {

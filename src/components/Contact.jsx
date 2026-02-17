@@ -48,8 +48,8 @@ function Contact({ t }) {
     {
       icon: <FaGithub />,
       title: t.github,
-      value: '@Alexjosu',
-      link: 'https://github.com/Alexjosu'
+      value: '@AlexanderJosu',
+      link: 'https://github.com/AlexanderJosu'
     },
     {
       icon: <FaLinkedin />,
@@ -63,71 +63,66 @@ function Contact({ t }) {
     <section id="contact" className="contact">
       <div className="contact-outer">
         <div className="contact-inner">
-          <div className="contact-left">
+          <div className="contact-header">
             <h2 className="section-title">{t.title}</h2>
             <p className="section-subtitle">{t.description}</p>
-            <div className="info-cards">
+            <div className="contact-links">
               {contactInfo.map((info, index) => (
                 <a
                   key={index}
                   href={info.link}
                   target={info.link.startsWith('http') ? '_blank' : '_self'}
                   rel="noopener noreferrer"
-                  className="info-card"
+                  className="contact-link"
                 >
-                  <div className="info-icon">{info.icon}</div>
-                  <div className="info-details">
-                    <h4>{info.title}</h4>
-                    <p>{info.value}</p>
-                  </div>
+                  {info.icon}
                 </a>
               ))}
             </div>
           </div>
-          <div className="contact-right">
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">{t.formName}</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  placeholder={t.formName}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">{t.formEmail}</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">{t.formMessage}</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  placeholder={t.formMessage}
-                  rows={5}
-                />
-              </div>
-              <button type="submit" className="btn-primary">
-                <FaPaperPlane style={{ marginRight: '8px' }} /> {t.formSend}
-              </button>
-              {status && <p className="form-status">{status}</p>}
-            </form>
-          </div>
+          
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="name">{t.formName}</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                placeholder={t.formName}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">{t.formEmail}</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder="your.email@example.com"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">{t.formMessage}</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                placeholder={t.formMessage}
+                rows={6}
+              />
+            </div>
+            <button type="submit" className="btn-primary">
+              <FaPaperPlane style={{ marginRight: '8px' }} /> {t.formSend}
+            </button>
+            {status && <p className="form-status">{status}</p>}
+          </form>
         </div>
       </div>
     </section>

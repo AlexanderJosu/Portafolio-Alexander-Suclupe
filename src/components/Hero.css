@@ -47,13 +47,13 @@
 
 [data-theme="dark"] .hero-greeting {
   background-color: rgba(26, 15, 46, 0.4);
-  border: 1px solid rgba(239, 68, 68, 0.2);
-  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.15);
   color: var(--text-primary);
 }
 
 [data-theme="dark"] .hero-greeting:hover {
-  box-shadow: 0 6px 25px rgba(239, 68, 68, 0.25);
+  box-shadow: 0 6px 25px rgba(220, 38, 38, 0.25);
 }
 
 .hero-title {
@@ -94,7 +94,7 @@
 }
 
 [data-theme="dark"] .hero-subtitle .text-highlight {
-  background: linear-gradient(135deg, #EF4444 0%, #FB923C 50%, #FBBF24 100%);
+  background: linear-gradient(135deg, #DC2626 0%, #F97316 50%, #FB923C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -105,7 +105,7 @@
 }
 
 [data-theme="dark"] .hero-title-gradient {
-  background: linear-gradient(90deg, #EF4444 0%, #FB923C 50%, #FBBF24 100%);
+  background: linear-gradient(90deg, #DC2626 0%, #F97316 50%, #FB923C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

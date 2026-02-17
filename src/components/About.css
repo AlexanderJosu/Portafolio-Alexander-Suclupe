@@ -38,7 +38,7 @@
 }
 
 [data-theme="dark"] .about-text .text-highlight {
-  background: linear-gradient(135deg, #EF4444 0%, #FB923C 50%, #FBBF24 100%);
+  background: linear-gradient(135deg, #DC2626 0%, #F97316 50%, #FB923C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -71,7 +71,7 @@
 }
 
 [data-theme="dark"] .feature-card:hover {
-  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.25);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.2);
   background-color: #321f47;
 }
 
@@ -99,7 +99,7 @@
 }
 
 [data-theme="dark"] .feature-card h3 .text-highlight {
-  background: linear-gradient(135deg, #EF4444 0%, #FB923C 100%);
+  background: linear-gradient(135deg, #DC2626 0%, #F97316 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -121,20 +121,20 @@
 }
 
 .feature-card:nth-child(3) .feature-icon {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(251, 113, 133, 0.1) 100%);
-  color: #EF4444;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+  color: #DC2626;
 }
 
 [data-theme="dark"] .feature-card:nth-child(1) .feature-icon {
-  color: #EF4444;
+  color: #DC2626;
 }
 
 [data-theme="dark"] .feature-card:nth-child(2) .feature-icon {
-  color: #FB923C;
+  color: #F97316;
 }
 
 [data-theme="dark"] .feature-card:nth-child(3) .feature-icon {
-  color: #FB7185;
+  color: #DC2626;
 }
 @keyframes fadeIn {
   from {
