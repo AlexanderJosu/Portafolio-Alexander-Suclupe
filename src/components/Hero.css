@@ -59,7 +59,7 @@
 .hero-title {
   font-size: 5rem;
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1.1;
   margin-bottom: 0.8rem;
 }
 
@@ -70,7 +70,7 @@
 
 .hero-title-gradient {
   display: block;
-  margin-top: -35px;
+  margin-top: -25px;
   background: linear-gradient(90deg, #DC2626 0%, #F97316 50%, #FB923C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
