@@ -125,9 +125,9 @@ function Navbar({ t, language, setLanguage }) {
             {darkMode ? <FaSun /> : <FaMoon />}
           </button>
 
-          <a 
-            href="/Alexander_Suclupe_CV.pdf"
-            download="Alexander_Suclupe_CV.pdf"
+          <a
+            href={`${import.meta.env.BASE_URL}${language === 'es' ? 'Alexander_Josue_Suclupe_Paucar_CV_es.pdf' : 'Alexander_Suclupe_CV.pdf'}`}
+            download={language === 'es' ? 'Alexander_Josue_Suclupe_Paucar_CV_es.pdf' : 'Alexander_Suclupe_CV.pdf'}
             className="btn-resume"
           >
             {t.resume}
